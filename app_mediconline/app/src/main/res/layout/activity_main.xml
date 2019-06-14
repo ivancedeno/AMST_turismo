@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity1">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Regiones del Ecuador" android:id="@+id/txt"/>
+        <Button
+                android:text="Costa "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/btn1"/>
+        <Button
+                android:text="Sierra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/btn2"/>
+        <Button
+                android:text="Oriente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/btn3"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"/>
+        <Button
+                android:text="Insular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/btn4"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"/>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
